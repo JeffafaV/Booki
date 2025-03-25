@@ -16,6 +16,39 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+header > img {
+    align-self: flex-end;
+    height: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    height: 50px;
+}
+
+nav > span {
+    height: 46px;
+    line-height: 46px;
+}
+
+nav > span:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+    margin-top: -2px;
 }
 
 .main-container {
