@@ -28,12 +28,6 @@ body {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 767px) {
-  .main-container {
-    padding: 0;
-  }
-}
-
 header {
   display: flex;
   flex-direction: row;
@@ -61,7 +55,6 @@ header > img {
   height: 46px;
   display: flex;
   align-items: center;
-  /* line-height: 46px; */
 }
 
 .nav-list > li:hover {
@@ -71,55 +64,14 @@ header > img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-  header {
-    flex-direction: column;
-    gap: 10px;
-    height: auto;
-  }
-
-  header > img {
-    align-self: auto;
-    margin-top: 10px;
-  }
-
-  nav {
-    width: 100%;
-  }
-
-  .nav-list {
-    width: 100%;
-    gap: 0;
-  }
-
-  .nav-list > li {
-    width: 50%;
-    justify-content: center;
-    border-bottom: 2px solid var(--main-bg-color);
-  }
-
-  .nav-list > li:hover {
-    border-top: none;
-    margin-top: 0;
-    border-color: var(--main-color);
-  }
-
-  .sub-header {
-    padding: 0 30px;
-  }
-}
-
 form {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  /* border: 2px solid green; */
   width: fit-content;
   border-radius: 15px;
   height: 40px;
 }
 
-/* so instead of changing height and line height I can create a container and use flex box to center */
 .location-icon {
   background-color: var(--main-bg-color);
   height: 100%;
@@ -130,19 +82,12 @@ form {
 
 form i {
   padding: 0 22px;
-  /* height: 100%; */
-  /* line-height: 40px; */
-  /* background-color: var(--main-bg-color); */
 }
 
 .search-button {
-  /* padding: 0 10px; */
   background-color: var(--main-color);
   color: white;
   height: 100%;
-  /* height: 40px;
-  line-height: 40px; */
-  /* margin: 0; */
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -168,34 +113,11 @@ input {
   outline: none;
   font-weight: bold;
   height: 38px;
-  /* remove vertical padding */
   padding: 0 10px;
-}
-
-@media screen and (max-width: 767px) {
-  input {
-    max-width: 130px;
-  }
 }
 
 .search-mobile {
   display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .search-desktop {
-    display: none;
-  }
-
-  form > button {
-    border-radius: 15px 15px 15px 15px;
-    padding: 0;
-  }
-
-  .search-mobile {
-    color: white;
-    display: inline;
-  }
 }
 
 .filter-section {
@@ -208,7 +130,6 @@ input {
 .filter-list {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   list-style-type: none;
   padding: 0;
   gap: 15px;
@@ -220,24 +141,6 @@ input {
 
 .filter-list span {
   text-wrap: nowrap;
-}
-
-@media screen and (max-width: 1024px) {
-  .filter-section {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    margin-top: 15px;
-  }
-
-  .filter-section > p {
-    margin: 0;
-    margin-top: 3px;
-  }
-
-  .filter-list {
-    margin: 0;
-  }
 }
 
 .filter-list button {
@@ -276,20 +179,6 @@ input {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .filter-list {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-    /* min-width: 260px; */
-  }
-
-  .filter-list button {
-    padding: 0 5px 0 10px;
-    gap: 10px;
-  }
-}
-
 .disclaimer-section {
   display: flex;
   align-items: center;
@@ -299,7 +188,6 @@ input {
 .disclaimer-section > i {
   border: 1px solid #d9d9d9;
   border-radius: 50%;
-  /* background-color: var(--main-bg-color); */
   padding: 5px 10px;
 }
 
@@ -350,7 +238,6 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* padding: 20px; */
 }
 
 .accommodation-content {
@@ -388,7 +275,6 @@ input {
 
 .accommodation-cards .card-subtitle {
   margin: 0;
-  /* padding: 0; */
 }
 
 .accommodation-cards .card-rating {
@@ -440,8 +326,88 @@ input {
   margin-bottom: 5px;
 }
 
-/****** Accommodation And Popular Queuries ***********/
+/****** Activities ***********/
+.activities {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.activity-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.activity-cards .card {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  padding: 0;
+}
+
+.activity-cards img {
+  width: 100%;
+  height: 330px;
+  border-radius: 20px 20px 0 0;
+}
+
+.activity-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: var(--main-bg-color);
+}
+
+.footer-content {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 10px;
+  padding-left: 0px;
+}
+
+.footer-list-header {
+  font-size: 22px;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1024px) {
+  .filter-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .filter-section > p {
+    margin: 0;
+    margin-top: 3px;
+  }
+
+  .filter-list {
+    margin: 0;
+  }
+
   .accommodation-and-popular {
     display: flex;
     flex-direction: column;
@@ -470,9 +436,90 @@ input {
   .popular-cards .card {
     width: 31%;
   }
+
+  .activity-cards .card {
+    width: 23%;
+  }
+
+  .activity-cards img {
+    height: 200px;
+  }
+
+  .footer-content {
+    width: 83%;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .main-container {
+    padding: 0;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+
+  header > img {
+    align-self: auto;
+    margin-top: 10px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .nav-list {
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav-list > li {
+    width: 50%;
+    justify-content: center;
+    border-bottom: 2px solid var(--main-bg-color);
+  }
+
+  .nav-list > li:hover {
+    border-top: none;
+    margin-top: 0;
+    border-color: var(--main-color);
+  }
+
+  .sub-header {
+    padding: 0 30px;
+  }
+
+  input {
+    max-width: 130px;
+  }
+
+  .search-desktop {
+    display: none;
+  }
+
+  form > button {
+    border-radius: 15px 15px 15px 15px;
+    padding: 0;
+  }
+
+  .search-mobile {
+    color: white;
+    display: inline;
+  }
+
+  .filter-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+
+  .filter-list button {
+    padding: 0 5px 0 10px;
+    gap: 10px;
+  }
+
   .accommodation-and-popular section {
     border-radius: 0;
   }
@@ -508,51 +555,7 @@ input {
   .accommodation-cards img {
     height: 130px;
   }
-}
 
-/****** Activities ***********/
-.activities {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 30px 30px;
-  gap: 40px;
-  box-sizing: border-box;
-}
-
-.activity-cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* gap: 10px; */
-}
-
-.activity-cards .card {
-  display: flex;
-  flex-direction: column;
-  width: 24%;
-  padding: 0;
-}
-
-.activity-cards img {
-  width: 100%;
-  height: 330px;
-  border-radius: 20px 20px 0 0;
-}
-
-@media screen and (max-width: 1024px) {
-  .activity-cards .card {
-    width: 23%;
-  }
-
-  .activity-cards img {
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .activity-cards {
     flex-direction: column;
     gap: 30px;
@@ -565,54 +568,9 @@ input {
   .activity-cards img {
     height: 170px;
   }
-}
 
-.activity-cards .card-title {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-  padding: 10px;
-}
-
-footer {
-  width: 100%;
-  box-sizing: border-box;
-  /* display: flex;
-  flex-direction: row; */
-  padding: 30px;
-  /* justify-content: space-between; */
-  background-color: var(--main-bg-color);
-}
-
-.footer-content {
-  width: 75%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 1024px) {
-  .footer-content {
-    width: 83%;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .footer-content {
     width: 100%;
     flex-direction: column;
   }
-}
-
-.footer-list {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  gap: 10px;
-  padding-left: 0px;
-}
-
-.footer-list-header {
-  font-size: 22px;
-  font-weight: bold;
 }

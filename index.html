@@ -23,7 +23,10 @@
   <body>
     <div class="main-container">
       <header>
-        <img src="./images/logo/Booki.png" />
+        <img
+          src="./images/logo/Booki.png"
+          srcset="./images/logo/Booki@3x.png 3x"
+        />
         <nav>
           <ul class="nav-list">
             <li><span>Accommodation</span></li>
@@ -38,17 +41,13 @@
           <div class="location-icon">
             <i class="fa-solid fa-location-dot" style="color: #000000"></i>
           </div>
-          <!-- <div class="input-field"> -->
-          <input type="text" value="Text" />
-          <!-- </div> -->
 
-          <!-- <div class="search-button"> -->
+          <input type="text" value="Text" />
+
           <button type="submit">
             <span class="search-desktop">Search</span>
             <i class="search-mobile fa-solid fa-magnifying-glass"></i>
           </button>
-
-          <!-- </div> -->
         </form>
 
         <div class="filter-section">
@@ -291,8 +290,6 @@
       </main>
       <footer>
         <div class="footer-content">
-          <!-- perhaps I need another container that is like 75% width of footer
-        and insert the lists in that container with a space between -->
           <ul class="footer-list">
             <li class="footer-list-header">About</li>
             <li>Using the Website</li>
