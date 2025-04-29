@@ -25,11 +25,13 @@
       <header>
         <img src="./images/logo/Booki.png" />
         <nav>
-          <span>Accommodation</span>
-          <span>Things To Do</span>
+          <ul class="nav-list">
+            <li><span>Accommodation</span></li>
+            <li><span>Things To Do</span></li>
+          </ul>
         </nav>
       </header>
-      <section>
+      <section class="sub-header">
         <h1>Find a place to stay for your dream vacation</h1>
         <p>In the heart of the city or surrounded by nature</p>
         <form>
@@ -41,7 +43,11 @@
           <!-- </div> -->
 
           <!-- <div class="search-button"> -->
-          <button type="submit">Search</button>
+          <button type="submit">
+            <span class="search-desktop">Search</span>
+            <i class="search-mobile fa-solid fa-magnifying-glass"></i>
+          </button>
+
           <!-- </div> -->
         </form>
 
@@ -54,25 +60,25 @@
                   class="fa-solid fa-money-bill-wave fa-lg"
                   style="color: #0065fc"
                 ></i>
-                <p>Budget</p>
+                <span>Budget</span>
               </button>
             </li>
             <li>
               <button>
                 <i class="fa-solid fa-person fa-lg" style="color: #0065fc"></i>
-                <p>Family-Friendly</p>
+                <span>Family-Friendly</span>
               </button>
             </li>
             <li>
               <button>
                 <i class="fa-solid fa-heart fa-lg" style="color: #0065fc"></i>
-                <p>Romantic</p>
+                <span>Romantic</span>
               </button>
             </li>
             <li>
               <button>
                 <i class="fa-solid fa-fire fa-lg" style="color: #0065fc"></i>
-                <p>Our Top Picks</p>
+                <span>Our Top Picks</span>
               </button>
             </li>
           </ul>
@@ -309,4 +315,5 @@
   </body>
 </html>
 
-<!-- TODO: CLEAN CODE, ANIMATION ON ICONS, FIX H TAGS (SEMANTICS), ADD HORIZONTAL SPACING TO TEXT IN MY CREATED CARDS, SRCSET BOOKI LOGO -->
+<!-- TODO: CLEAN CODE, FIX H TAGS (SEMANTICS), ADD HORIZONTAL SPACING TO TEXT IN MY CREATED CARDS, SRCSET BOOKI LOGO,  NAV BAR SENDS USER TO CORRECT SECTION, SEARCH ICON ON BTN, BOLD 
+ $ SIGNS, CHECK OUT THE FILTER GRID FOR SIZING, make form and filter section 265 width -->
